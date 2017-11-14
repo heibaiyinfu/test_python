@@ -1,4 +1,4 @@
-#! -*- coding:utf-8 -*-
+	#! -*- coding:utf-8 -*-
 
 from xml.parsers.expat import ParserCreate
 import enum
@@ -43,13 +43,11 @@ class WeatherSaxHander(object):
 			    self.__data['tomorrow']['low'] = int(attrs['low'])
 			    self.__data['tomorrow']['high'] = int(attrs['high'])
 
-
 	def end_element(self, name):
 		pass
 
 	def char_data(self, name):
 		pass
-
 
 
 def parse_weather(xml):
